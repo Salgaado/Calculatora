@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  transition: all 0.5s ease;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+
+h1 {
+  display: flex;
+  padding: 5px;
+  color: white;
+  background-color: #333;
+  justify-content: center;
+  font-size: 25px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.calculator {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#display {
+  margin: 0 10px;
+  height: 150px;
+  width: auto;
+  max-width: 270px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 30px;
+  margin-bottom: 20px;
+  overflow-x: scroll;
+  
+}
+
+#displayFirst {
+  max-width: 270px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 20px; 
+  position:absolute;
+  align-items:center;
+  left:2rem ;
+}
+
+#displayFirst::-webkit-scrollbar {
+  display: block;
+  height: 3px;
+}
+
+#display::-webkit-scrollbar {
+  display: block;
+  height: 3px;
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  border: 0;
+  border-radius: 30px;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button#equal {
+  height: 130px;
+}
+
+.calculator {
+  background-color: gray;
+}
+
+.calculator #display, #displayFirst {
+  background-color: #81bed1;
+}
+
+.calculator button#clear {
+  background-color: red;
+
+  color: #fff;
+}
+.calculator button.btn-sqrt {
+  background-color: rgb(99, 99, 99);
+  color: red
+}
+
+
+.calculator button.btn-number{
+  background-color: rgb(99, 99, 99);
+  color: #000000;
+}
+
+.calculator button.btn-operator {
+  background-color: rgb(156, 156, 156);
+  color: #000;
+}
+
+.calculator button.btn-equal {
+  background-color: red;
+  color: #fff;
+}
+
+.calculator button.btn-backspace {
+  background-color: rgb(156, 156, 156);
+  color: red;
+}
+
+
+
+
+
+
+
